@@ -13,6 +13,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- kit for awasome icons -->
     <script src="https://kit.fontawesome.com/52a5252143.js" crossorigin="anonymous"></script>
+    <!-- link for google font icon  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- title and fab icon  -->
     <title>Tea House</title>
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
@@ -337,47 +340,57 @@
 
 
 
-    <footer class=" lg:px-48 py-10 bg-gray-200 text-base-content text-black">
+    <footer class="container mx-auto lg:px-48 py-10 bg-gray-200 text-black">
 
         <div class=" flex justify-between my-24">
             <img src="images/cup.png" alt="">
-            <p>
+            <p class=" flex items-center gap-10">
                 <Span>Ready to get started</Span>
-                <button class="btn btn-error">Get Started</button>
+                <button class="btn btn-primary linercolor text-white">Get Started</button>
             </p>
 
         </div>
-        <div class="footer">
-            <nav>
-                <h6 class="footer-title">Services</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30">
+            <nav class="flex flex-col mb-4 mx-auto">
+                <h6 class="text-2xl font-bold">Services</h6>
                 <a class="link link-hover">Branding</a>
                 <a class="link link-hover">Design</a>
                 <a class="link link-hover">Marketing</a>
                 <a class="link link-hover">Advertisement</a>
             </nav>
-            <nav>
-                <h6 class="footer-title">Company</h6>
+            <nav class="flex flex-col mb-4 mx-auto">
+                <h6 class="text-2xl font-bold">Company</h6>
                 <a class="link link-hover">About us</a>
                 <a class="link link-hover">Contact</a>
                 <a class="link link-hover">Jobs</a>
                 <a class="link link-hover">Press kit</a>
             </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
+            <nav class="flex flex-col mb-4 mx-auto">
+                <h6 class="text-2xl font-bold">Legal</h6>
                 <a class="link link-hover">Terms of use</a>
                 <a class="link link-hover">Privacy policy</a>
                 <a class="link link-hover">Cookie policy</a>
             </nav>
-            <form>
-                <h6 class="footer-title">Newsletter</h6>
+            <form class="flex flex-col mb-4 mx-auto">
+                <h6 class="text-2xl font-bold">Newsletter</h6>
                 <fieldset class="form-control w-80">
                     <label class="label">
                         <span class="label-text">Enter your email address</span>
                     </label>
                     <div class="join">
-                        <input type="text" placeholder="username@site.com"
-                            class="input input-bordered join-item bg-white text-black" />
-                        <button class="btn btn-primary join-item">Subscribe</button>
+                        <input type="text" placeholder="Email address "
+                            class="py-2 border-b-2 border-black outline-none join-item bg-transparent  text-black" />
+                        <button class="btn btn-primary linercolor text-white rounded-full"><span
+                                class="material-symbols-outlined">
+                                chevron_right
+                            </span></button>
+                    </div>
+                    <div class="mt-5">
+                        <div class="flex  ">
+                            <a class="font-bold text-3xl " href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="font-bold text-3xl mx-3" href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a class="font-bold text-3xl " href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                     </div>
                 </fieldset>
             </form>
