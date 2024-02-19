@@ -16,6 +16,7 @@
     <!-- title and fab icon  -->
     <title>Tea House</title>
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
+    <!-- <script src="https://kit.fontawesome.com/52a5252143.js" crossorigin="anonymous"></script>  -->
     <!-- custom color for tailwind css  -->
     <script>
         tailwind.config = {
@@ -35,7 +36,8 @@
         .manropefont {
             font-family: "Manrope", sans-serif;
         }
-        .linercolor{
+
+        .linercolor {
             background: linear-gradient(rgb(255, 0, 0), rgb(255, 137, 56));
         }
     </style>
@@ -101,10 +103,9 @@
         </nav>
 
         <!-- hero start here  -->
-
-        <div class="hero  text-black mt-10">
+        <banner class="hero  text-black mt-10">
             <div class="hero-content flex-col lg:flex-row">
-                
+
                 <div>
                     <h1 class="text-7xl font-extrabold manropefont">
                         It's good
@@ -113,16 +114,18 @@
                         <br>
                         Tea House
                     </h1>
-                    <p class="py-6">Tea and Botanical Solutions Supplier Give 
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give
                         <br>
                         Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary linercolor text-white">Explore More <img src="images/arrow.png" alt=""></button>
+                    <button class="btn btn-primary linercolor text-white">Explore More <img src="images/arrow.png"
+                            alt=""></button>
                 </div>
 
                 <div>
                     <img src="images/banner.png" class="max-w-sm rounded-xl " />
-                    <div class="-mt-20 bg-white flex justify-center items-center gap-4 drop-shadow-lg rounded-xl p-5 w-60 ">
+                    <div
+                        class="-mt-20 bg-white flex justify-center items-center gap-4 drop-shadow-lg rounded-xl p-5 w-60 ">
                         <i class="fa-solid fa-star text-amber-500 text-3xl "></i>
                         <div>
                             <h3 class="text-2xl font-bold ">5.00</h3>
@@ -131,17 +134,93 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </banner>
     </header>
 
 
-<!-- <script src="https://kit.fontawesome.com/52a5252143.js" crossorigin="anonymous"></script>  -->
 
 
-    <main>
 
+    <main class="container mx-auto text-black">
+        <!-- Featured section -->
+        <section class="text-center my-24 ">
+            <h2 class="text-5xl font-extrabold mb-5 ">Our Featured Products</h2>
+            <p class="lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered alteration in some form,
+                by injected humour, or randomised words which don't look even slightly believable.</p>
+            <!-- featured tea card container  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- first card  -->
+                <div class="card shadow-xl bg-[#F4F4F4] p-8 border">
+                    <figure><img src="images/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-2xl font-bold">Milk Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- second card  -->
+                <div class="card shadow-xl bg-[#F4F4F4] p-8 border">
+                    <figure><img src="images/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-2xl font-bold">Black Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- third card  -->
+                <div class="card shadow-xl bg-[#F4F4F4] p-8 border">
+                    <figure><img src="images/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-2xl font-bold">Lemon Tea </h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+                <!-- fourth card  -->
+                <div class="card shadow-xl bg-[#F4F4F4] p-8 border">
+                    <figure><img src="images/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-2xl font-bold">Green Tea </h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- great tea section  -->
+        <section class="mx-24 container">
+            <div class="grid">
+
+            </div>
+
+            <div class="space-y-5">
+                <h3 class="text-5xl font-extrabold">Great Tea, <br>
+                    Freshly Presented</h3>
+                <p class="">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the
+                highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers because
+                of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h4 class="text-xl font-extrabold">Unique Test</h4>
+                <p>
+                    A Unique and different style from other teapots gives a luxurious and minimalist impression
+                </p>
+                
+                <h4 class="text-xl font-extrabold ">Premium Quality</h4>
+                <p>
+                Premium Quality that makes tea more elegant and more durable when you use it.
+                </p>
+            </div>
+        </section>
     </main>
-    <footer class="container mx-auto">
+
+
+
+
+
+
+    <footer class="container mx-auto ">
 
     </footer>
 
