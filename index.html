@@ -11,6 +11,8 @@
     <!-- tailwind and daisyUI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- kit for awasome icons -->
+    <script src="https://kit.fontawesome.com/52a5252143.js" crossorigin="anonymous"></script>
     <!-- title and fab icon  -->
     <title>Tea House</title>
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
@@ -20,6 +22,8 @@
             theme: {
                 extend: {
                     colors: {
+                        clifford: '#da373d',
+                        'btn-colro': '#da373d',
                         clifford: '#da373d',
                     }
                 }
@@ -31,6 +35,9 @@
         .manropefont {
             font-family: "Manrope", sans-serif;
         }
+        .linercolor{
+            background: linear-gradient(rgb(255, 0, 0), rgb(255, 137, 56));
+        }
     </style>
 </head>
 
@@ -41,7 +48,7 @@
     <!-- header part start here  -->
     <header class="container mx-auto">
         <!-- navbar start here  -->
-        <nav>
+        <nav class="mt-5">
             <div class="navbar text-black bg-gray-200 rounded-2xl">
                 <div class="flex-1">
                     <a class="btn btn-ghost text-2xl font-bold">Tea House</a>
@@ -96,8 +103,8 @@
         <!-- hero start here  -->
 
         <div class="hero  text-black mt-10">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <img src="images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div class="hero-content flex-col lg:flex-row">
+                
                 <div>
                     <h1 class="text-7xl font-extrabold manropefont">
                         It's good
@@ -106,8 +113,22 @@
                         <br>
                         Tea House
                     </h1>
-                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give 
+                        <br>
+                        Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary linercolor text-white">Explore More <img src="images/arrow.png" alt=""></button>
+                </div>
+
+                <div>
+                    <img src="images/banner.png" class="max-w-sm rounded-xl " />
+                    <div class="flex items-center gap-4 shadow-lg">
+                        <i class="fa-solid fa-star text-yellow-500 text-3xl "></i>
+                        <div>
+                            <h3 class="text-2xl font-bold ">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
